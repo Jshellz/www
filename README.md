@@ -1,1 +1,1 @@
-WWW
+Laravel with admin panel
