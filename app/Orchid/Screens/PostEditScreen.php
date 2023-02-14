@@ -5,7 +5,7 @@ namespace App\Orchid\Screens;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Contracts\Container\BindingResolutionException;
-use Illuminate\Http\Client\Request;
+use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Orchid\Screen\Actions\Button;
 use Orchid\Screen\Fields\Cropper;
@@ -135,7 +135,7 @@ class PostEditScreen extends Screen
 
         Alert::info('You have successfully created a post.');
 
-        return redirect()->route('platform,.post.list');
+        return redirect()->route('platform.post.list');
 
     }
 
@@ -151,6 +151,6 @@ class PostEditScreen extends Screen
 
         Alert::info('You have successfully deleted the post.');
 
-        return redirect()->route('platform.post.list');
+        return redirect()->route('platform.list.post');
     }
 }

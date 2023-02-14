@@ -10,6 +10,7 @@ use App\Orchid\Screens\Examples\ExampleFieldsScreen;
 use App\Orchid\Screens\Examples\ExampleLayoutsScreen;
 use App\Orchid\Screens\Examples\ExampleScreen;
 use App\Orchid\Screens\Examples\ExampleTextEditorsScreen;
+use App\Orchid\Screens\IdeaScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\PostEditScreen;
 use App\Orchid\Screens\PostListScreen;
@@ -112,3 +113,5 @@ Route::screen('posts', PostListScreen::class)->name('platform.list.post')->bread
  */ function (Trail $trail) {
     return $trail->parent('platform.index')->push('List post');
 });
+
+Route::screen('/idea', IdeaScreen::class)->name('platform.idea');

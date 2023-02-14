@@ -17,7 +17,7 @@ class PostListScreen extends Screen
     public function query(): array
     {
         return [
-            'posts' => Post::paginate()
+            'posts' => Post::all()->filter()
         ];
     }
 
